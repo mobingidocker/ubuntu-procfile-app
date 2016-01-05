@@ -2,6 +2,8 @@
 echo "installing" > /var/log/container_status
 
 echo "Installing..."
+rm -rf /app
+cp -r /code /app
 /build/builder
 
 if [ ! -f /app/Procfile ]; then

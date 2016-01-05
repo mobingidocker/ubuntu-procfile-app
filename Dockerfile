@@ -15,7 +15,6 @@ RUN rm -fr /app
 
 RUN chmod 755 /*.sh
 
-ENV GIT_REPO /code
 ENV PORT 8080
 
 EXPOSE 80
